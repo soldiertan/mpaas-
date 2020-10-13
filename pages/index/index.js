@@ -49,6 +49,10 @@ Page({
       isModal: true,
       current: choise
     });
+    this.hideKeyBoard()
+  },
+  hideKeyBoard() {
+    my.hideKeyboard();
   },
   onModalClose() {
     this.setData({
@@ -94,6 +98,7 @@ Page({
     //     my.alert({content: '调用失败：'+JSON.stringify(error), });
     //   }
     // });
+    this.hideKeyBoard()
     my.call('getLocation1', {}, ({ data, error }) => {
       if (error === 1) {
         console.log('请前往自定义设置注册JSAPI');
@@ -110,6 +115,7 @@ Page({
       current: choise
     })
     const _this = this;
+    this.hideKeyBoard()
     my.call('getContact', {}, ({ data, error }) => {
       if (error === 1) {
         console.log('请前往自定义设置注册JSAPI');

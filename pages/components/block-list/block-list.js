@@ -2,9 +2,9 @@ Component({
   methods: {
     onItemTap(e) {
       const { onItemTap } = this.props;
-      const { value } = e.target.dataset;
+      const { value, disabled } = e.target.dataset;
       if(onItemTap) {
-        onItemTap(value);
+        onItemTap(value, disabled);
       }
     },
     onItemInput(e) {

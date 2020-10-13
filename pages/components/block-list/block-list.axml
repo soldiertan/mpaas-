@@ -1,6 +1,6 @@
 <view class="block-list">
-  <view class="block-list-container" onTap="onItemTap" data-value="{{keyName}}">
-    <input-item value="{{value}}" placeholder="{{placeholder}}" disabled="{{disabled === true? disabled: ''}}" data-field="{{keyName}}" class="block-item" clear="{{false}}" type="text" onInput="onItemInput" onBlur="onItemBlur">
+  <view class="block-list-container" onTap="onItemTap" data-value="{{keyName}}" data-disabled="{{disabled}}">
+    <input-item value="{{value}}" placeholder="{{placeholder}}" data-field="{{keyName}}" class="block-item" clear="{{false}}" type="text" onInput="onItemInput" onBlur="onItemBlur">
       <view class="block-label">{{label}}<slot><text class="block-label-sub">{{sub}}</text></slot></view>
       <view slot="extra" class="{{icon}}"></view>
     </input-item>
