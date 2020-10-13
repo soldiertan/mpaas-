@@ -1,0 +1,9 @@
+<view class="header-container">
+  <view class="container-tip">
+    <text>已领取<text class="red">21.00</text>元，还可领取<text class="red">2</text>个现金红包</text>
+  </view>
+  <progress percent="60" activeColor="#FF673F" backgroundColor="rgba(215, 113, 113, 0.26)" borderRadius="4" strokeWidth="3"/>
+  <view class="container-notice">
+    请填写个人信息，确保信息真实有效，信息仅用于额度评估
+  </view>
+</view>

@@ -1,0 +1,26 @@
+
+<view>
+  <view>
+    <header />
+    <view class="sub-title">本人信息</view>
+    <block-list label="{{tip.education.label}}" value="{{formData.education}}" disabled="{{true}}" keyName="education" placeholder="{{tip.education.placeholder}}" onItemTap="onItemTap" icon="arrow" />
+    <block-list label="{{tip.marriage.label}}" value="{{formData.marriage}}" disabled="{{true}}" keyName="marriage" placeholder="{{tip.marriage.placeholder}}" onItemTap="onItemTap" icon="arrow"/>
+    <block-list label="{{tip.email.label}}" value="{{formData.email}}" list="{{emailList}}" keyName="email" placeholder="{{tip.email.placeholder}}" onItemTap="onEmailTap" onItemInput="onEmailInput" onItemBlur="onItemBlur" onListTap="onListTap"/>
+    <view class="sub-title">工作信息</view>
+    <block-list label="{{tip.company.label}}" value="{{formData.company}}" keyName="company" placeholder="{{tip.company.placeholder}}" onItemTap="onCompanyTap"/>
+    <block-list label="{{tip.city.label}}" value="{{formData.city}}" disabled="{{true}}" keyName="city" placeholder="{{tip.city.placeholder}}" onItemTap="onCityTap" icon="address"/>
+    <view class="sub-title">联系人</view>
+    <block-list label="{{tip.contacts.label}}" value="{{formData.contacts}}" disabled="{{true}}" keyName="contacts" placeholder="{{tip.contacts.placeholder}}" onItemTap="onContactsTap" icon="contact"/>
+    <block-list label="{{tip.relation.label}}" value="{{formData.relation}}" disabled="{{true}}" keyName="relation" placeholder="{{tip.relation.placeholder}}" onItemTap="onItemTap" icon="arrow"/>
+    <view class="sub-title">其他</view>
+    <block-list label="{{tip.income.label}}" value="{{formData.income}}" disabled="{{true}}" keyName="income" placeholder="{{tip.income.placeholder}}" onItemTap="onItemTap" icon="arrow"/>
+    <block-list label="{{tip.usage.label}}" value="{{formData.usage}}" disabled="{{true}}" keyName="usage" placeholder="{{tip.usage.placeholder}}" onItemTap="onItemTap" icon="arrow"/>
+    <view class="sub-title">补充信息<text class="sub-title-notice">（填写可以获得<text class="red">更高</text>额度哦）</text></view>
+    <block-list label="{{tip.housing.label}}" value="{{formData.housing}}" disabled="{{true}}" keyName="housing" placeholder="{{tip.housing.placeholder}}" sub="（选填）" onItemTap="onItemTap" icon="arrow"/>
+    <view class="btn-box">
+      <view class="btn"><button class="pre">上一步</button></view>
+      <view class="btn"><button class="next">下一步</button></view>
+    </view>
+    <modal modalData="{{modalData}}" header="{{headerTitle}}" onItemClose="onModalClose" onItemClick="onItemClick" className="{{isModal? '': 'hide'}}"/>
+  </view>
+</view>

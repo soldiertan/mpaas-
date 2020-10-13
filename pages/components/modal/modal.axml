@@ -1,0 +1,14 @@
+<view class="modal-container {{className}}">
+  <view class="modal-container-header">
+    <view class="modal-close" onTap="onItemClose"></view>
+    {{header}}
+  </view>
+  <view class="modal-container-box">
+    <block a:for="{{modalData}}">
+      <view key="{{item.value}}" class="modal-container-list" onTap="onItemClick" data-value="{{item.value}}">
+        <text class="list-label">{{item.label}}</text>
+        <text class="list-choose {{item.isCheck? 'choose-checked' :'choose-unchecked'}}"></text>
+      </view>
+    </block>
+  </view>
+</view>

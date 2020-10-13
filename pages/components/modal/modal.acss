@@ -1,0 +1,57 @@
+.modal-container {
+  width: 100%;
+  height: 375px;
+  position: fixed;
+  bottom: 0;
+  background: #FFFFFF;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #333E45;
+  letter-spacing: 0;
+}
+
+.modal-container-header {
+  line-height: 50px;
+  text-align: center;
+  background: #F8F9FA;
+}
+
+.modal-close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: 13px 10px;
+  background: no-repeat url("/pages/images/index/closeIcon.png") center/cover;
+}
+
+.modal-container-box {
+  height: 325px;
+  overflow: scroll;
+}
+
+.modal-container-list {
+  height: 57px;
+  border-radius: 2px 0 0 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.list-label {
+  margin-left: 15px;
+}
+
+.list-choose {
+  width: 19px;
+  height: 19px;
+  margin-right: 30px;
+}
+
+.choose-unchecked {
+  background: url("/pages/images/index/unchecked.png") no-repeat center/cover;
+}
+
+.choose-checked {
+  background: url("/pages/images/index/checked.png") no-repeat center/cover;
+}

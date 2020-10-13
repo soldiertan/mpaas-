@@ -1,0 +1,13 @@
+<view class="block-list">
+  <view class="block-list-container" onTap="onItemTap" data-value="{{keyName}}">
+    <input-item value="{{value}}" placeholder="{{placeholder}}" disabled="{{disabled === true? disabled: ''}}" data-field="{{keyName}}" class="block-item" clear="{{false}}" type="text" onInput="onItemInput" onBlur="onItemBlur">
+      <view class="block-label">{{label}}<slot><text class="block-label-sub">{{sub}}</text></slot></view>
+      <view slot="extra" class="{{icon}}"></view>
+    </input-item>
+  </view>
+  <block a:for="{{list}}">
+    <view class="block-sub-list" a:if="{{list.length > 0}}" onTap="onListTap" data-value="{{item}}">
+      <view class="sub-item">{{item}}</view>
+    </view>
+  </block>
+</view>

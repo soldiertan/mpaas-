@@ -1,0 +1,27 @@
+.red {
+  color: #FF673F;
+}
+
+.container-notice {
+  text-align: center;
+  margin-top: 15px;
+  font-family: PingFangSC-Regular;
+  color: #54A5B2;
+  letter-spacing: 0;
+  text-align: center;
+  height: 16.5px;
+  font-size: 12px;
+}
+
+.container-tip {
+  text-align: center;
+  line-height: 27.5px;
+  font-family: PingFangSC-Regular;
+  color: #333E45;
+  letter-spacing: 0;
+  font-size: 11px;
+}
+
+.container-progress {
+  height: 2.5px;
+}

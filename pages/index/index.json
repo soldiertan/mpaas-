@@ -1,0 +1,11 @@
+{
+  "defaultTitle": "个人信息",
+  "titleBarColor": "#262833",
+  "allowsBounceVertical": "NO",
+  "transparentTitle": "none",
+  "usingComponents": {
+    "block-list": "/pages/components/block-list/block-list",
+    "header": "/pages/components/header/header",
+    "modal": "/pages/components/modal/modal"
+  }
+}
